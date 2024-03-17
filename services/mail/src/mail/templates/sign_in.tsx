@@ -6,6 +6,7 @@ export default function SignInEmail({ url }: SignInEmailProps) {
     <Html>
       <Tailwind>
         <Button
+          key={url}
           href={url}
           className="flex text-white font-bold font-sans w-fit bg-zinc-800 hover:cursor-pointer rounded-md px-4 py-2"
         >
