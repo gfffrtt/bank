@@ -1,0 +1,1 @@
+export const SIGN_IN_ROUTE = "/auth/sign_in";

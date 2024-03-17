@@ -1,0 +1,1 @@
+export const CALLBACK_ROUTE = "/auth/sign_in/callback";

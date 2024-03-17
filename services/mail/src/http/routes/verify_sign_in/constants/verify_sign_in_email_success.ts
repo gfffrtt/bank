@@ -1,0 +1,1 @@
+export const VERIFY_SIGN_IN_EMAIL_SUCCESS = "An email has been sent to your email address. Please click on the link in the email to verify your sign in.";

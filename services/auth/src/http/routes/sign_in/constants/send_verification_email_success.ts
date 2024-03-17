@@ -1,0 +1,1 @@
+export const SEND_VERIFICATION_EMAIL_SUCCESS = "Verification email was sent, check your inbox.";

@@ -1,0 +1,1 @@
+export const ERROR_WHILE_SENDING_VERIFICATION_EMAIL = "An error occurred while sending the verification email. Please try again later.";

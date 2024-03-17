@@ -1,0 +1,1 @@
+export const ERROR_WHILE_SENDING_SIGN_IN_CONFIRMATION_EMAIL = "An error occurred while sending the sign in confirmation email. Please try again later.";
