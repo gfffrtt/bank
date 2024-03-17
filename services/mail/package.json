@@ -1,26 +1,19 @@
 {
-  "name": "auth",
-  "module": "src/http/server.ts",
+  "name": "mail",
+  "module": "index.ts",
   "type": "module",
-  "scripts": {
-    "dev": "bun --watch src/http/server.ts",
-    "test:unit": "vitest tests/*/unit/*.test.ts",
-    "test:integration": "vitest tests/*/integration/*.test.ts",
-    "email": "email dev --dir src/mail/templates --port 9999"
-  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "vitest": "^1.4.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "@react-email/components": "^0.0.15",
-    "@react-email/tailwind": "0.0.14",
+    "@react-email/tailwind": "^0.0.14",
     "elysia": "^1.0.0",
     "react-email": "^2.1.0",
-    "resend": "^3.2.0",
-    "vitest": "^1.4.0",
-    "zod": "^3.22.4"
+    "resend": "^3.2.0"
   }
 }
