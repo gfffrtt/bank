@@ -1,15 +1,21 @@
-import { Html, Text } from "@react-email/components"
+// @ts-expect-error
+import { Button, Html, Tailwind } from "@react-email/components";
 
-export default function SignInEmail({ token }: SignInEmailProps) {
-    return (
-        <Html>
-            <Text>
-                {token}
-            </Text>
-        </Html>
-    );
-};
+export default function SignInEmail({ url }: SignInEmailProps) {
+  return (
+    <Html>
+      <Tailwind>
+        <Button
+          href={url}
+          className="flex text-white font-bold font-sans w-fit bg-zinc-800 hover:cursor-pointer rounded-md px-4 py-2"
+        >
+          Confirm login
+        </Button>
+      </Tailwind>
+    </Html>
+  );
+}
 
 export type SignInEmailProps = {
-    token: string;
+  url: string;
 };

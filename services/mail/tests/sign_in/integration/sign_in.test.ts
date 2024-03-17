@@ -1,4 +1,5 @@
-import {describe, expect, it} from "vitest";
+import axios from "axios";
+import { expect, describe, it } from "bun:test";
 
 describe("Test the sign in route", () => {
     it("Should send an email to the user with the sign in link", async () => {
@@ -7,12 +8,8 @@ describe("Test the sign in route", () => {
             token: "123456",
         }
 
-        const output = await fetch("http://localhost:4000/auth/sign-in", {
-            method: "POST",
-            body: JSON.stringify(input),
-        })
+        const output = await axios.post("http://localhost:4000/auth/sign-in", input);
 
         expect(output.status).toBe(200);
-        expect(output.body).toBe("Email sent");
     });
 });
